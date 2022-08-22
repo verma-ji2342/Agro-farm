@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jarvis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="tailwindcss.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="axios.min.js"></script>
+<!--    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body class="bg-black">
+    <header>
+        <!--<div class="flex justify-between">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <ul class="menu flex space-x-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>-->
+        <div class="text-center text-white my-8">
+            <h1 class="text-4xl sm:text-5xl my-6 uppercase font-bold">Welcome to <span class="text-orange-400">Agro</span></h1>
+            <p class="my-12 mx-12">Hi my name is <span class="text-orange-400">Agro</span> and I'm your personal assistant for making your life a tad bit easier as a farmer.</p>
+        </div>
+
+        <div class="w-full py-10 px-12 text-white flex flex-col lg:flex-row">
+            <div class="flex-1 mx-2 my-8 max-w-3xl w-full flex flex-col overflow-y-auto items-center border border-orange-400 py-12 px-8 sm:px-10 md:px-12">
+                <button class="hidden inline-block py-1 px-3 text-2xl" id="openJarvis">Contact Jarvis</button>
+                <div style="height: 16rem; max-height: 16rem; overflow-y: auto" class="chat-container flex flex-col space-y-4 w-full px-6"></div>
+                <div id="formContainer" class="mt-8 overflow-hidden w-full">
+                    <form id="jarvis" class="w-full flex overflow-hidden justify-evenly">
+                        <input id="request" type="text" class="inline-block py-1 px-3 border-2 border-orange-400 text-black" />
+                        <button class="inline-block py-1 px-3 border border-orange-400" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex-1 mx-2 my-8">
+                <form id="hj" class="flex flex-col">
+                    <label>Have a suggestion for us?</label>
+                    <input id="hj_q" type="text" class="py-1 px-3 border-2 border-orange-400 text-black" />
+                    <input id="hj_a" type="text" class="py-1 px-3 border-2 border-orange-400 text-black" />
+                    <input type="submit" class="py-1 px-3 border border-orange-400 text-orange-400" />
+                </form>
+            </div>
+        </div>
+    </header>
+    <script src="main.js"></script>
+</body>
+</html>
